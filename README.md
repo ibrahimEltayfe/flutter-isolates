@@ -1,17 +1,11 @@
-# flutter_isolate
+# Flutter Isolates
 
-A new Flutter project.
+## IsolateExecutor
 
-## Getting Started
+`IsolateExecutor` provides a high-level API for managing Dart isolates with `Isolate.spawn`. It handles errors gracefully and ensures resources are collected and cleaned up after execution.
 
-This project is a starting point for a Flutter application.
+### Features
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# flutter-isolates
+- **Error Handling**: Automatically captures and reports errors occurring within the isolate.
+- **Resource Management**: Ensures all resources are properly cleaned up once the isolate finishes execution.
+- **Pause and Resume**: Supports pausing and resuming the isolate, allowing for flexible control over its execution.
